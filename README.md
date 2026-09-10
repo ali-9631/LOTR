@@ -12,7 +12,9 @@ It is a small project that demonstrates my learnings.
 
 *  [Codecademy, HTML](https://www.codecademy.com/enrolled/courses/learn-html)
 
+*  [Codecademy, CSS (Beginner)](https://www.codecademy.com/learn/learn-css)
+
 *  [Codecademy, JavaScript: Fundamentals](https://www.codecademy.com/enrolled/courses/learn-javascript-fundamentals)
 
-*  [Codecademy, CSS (Beginner)](https://www.codecademy.com/learn/learn-css)
+
 
