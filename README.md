@@ -4,9 +4,7 @@ Hello,
 
 I hope you enjoy the [LOTR website](https://ali-9631.github.io/LOTR/index.html).
 
-It is a small project that demonstrates my learning progress.
-
-* Started: 17-08-2026
+It is a small project that demonstrates my learnings.
 
 *  [HYF, core program, week1](https://hub.hackyourfuture.nl/core-program-week-1)
 
