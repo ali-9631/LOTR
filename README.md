@@ -14,7 +14,7 @@ It is a small project that demonstrates my learnings.
 
 *  [Codecademy, CSS (Beginner)](https://www.codecademy.com/learn/learn-css)
 
-*  [Codecademy, JavaScript: Fundamentals](https://www.codecademy.com/enrolled/courses/learn-javascript-fundamentals)
+*  [Codecademy, JavaScript (Beginner)](https://www.codecademy.com/enrolled/courses/introduction-to-javascript)
 
 
 
