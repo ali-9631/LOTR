@@ -16,5 +16,5 @@ It is a small project that demonstrates my learnings.
 
 *  [Codecademy, JavaScript (Beginner)](https://www.codecademy.com/enrolled/courses/introduction-to-javascript)
 
-
+**Next:** HYF: core program, week 3-5 & frontend track, week 1-2 | Codecademy, CSS
 
