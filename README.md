@@ -6,7 +6,7 @@
 
 *  [Codecademy, CSS (Beginner)](https://www.codecademy.com/learn/learn-css)
 
-*  [Codecademy, JavaScript (Beginner)](https://www.codecademy.com/enrolled/courses/introduction-to-javascript)
+*  [Codecademy, JavaScript (Beginner)](https://www.codecademy.com/enrolled/courses/introduction-to-javascript) **<-**
 
 *  [HYF, core program, week1](https://hub.hackyourfuture.nl/core-program-week-1)
 
