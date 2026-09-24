@@ -1,10 +1,7 @@
 # LOTR
 
-Hello,
+[LOTR website](https://ali-9631.github.io/LOTR/index.html).
 
-I hope you enjoy the [LOTR website](https://ali-9631.github.io/LOTR/index.html).
-
-It is a small project that demonstrates my learnings.
 *  [Codecademy, HTML](https://www.codecademy.com/enrolled/courses/learn-html)
 
 *  [Codecademy, CSS (Beginner)](https://www.codecademy.com/learn/learn-css)
@@ -15,5 +12,5 @@ It is a small project that demonstrates my learnings.
 
 *  [HYF, core program, week2](https://hub.hackyourfuture.nl/core-program-week-2) **ASSIGNMENT**
 
-**Next:** HYF: core program, week 3-5 & frontend track, week 1-2 | Codecademy, CSS
+**Next:** HYF: core program, week 3 & frontend track, week 1-2 | Codecademy, CSS
 
