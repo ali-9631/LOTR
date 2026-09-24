@@ -124,11 +124,5 @@ nav a {
     opacity: 0.8;
 }
 
-.image {
-    position: relative;
-    background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Fellowship.JPG/500px-Fellowship.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
 }
 
