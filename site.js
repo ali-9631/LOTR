@@ -1,6 +1,7 @@
 
 const loggedIn = sessionStorage.getItem("lotrLoggedIn") === "true";
 
+// Redirect visitors who are not logged in.
 if (!loggedIn) {
   const currentPage =
     window.location.pathname.split("/").pop() || "index.html";
@@ -13,6 +14,7 @@ if (!loggedIn) {
   );
 }
 
+// Handle logout.
 const logoutButton = document.getElementById("logoutButton");
 
 if (logoutButton) {
@@ -24,6 +26,7 @@ if (logoutButton) {
   });
 }
 
+// Handle quiz submission.
 const quizForm = document.getElementById("quizForm");
 
 if (quizForm) {
