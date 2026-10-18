@@ -77,8 +77,8 @@ nav button#logoutButton:hover {
 
 /* 5. Horizontal dividers */
 hr {
-  width: 100%;
-  max-width: 900px;
+  width: 320px;
+  max-width: 90%;
   margin: 25px auto;
   box-sizing: border-box;
   border: none;
