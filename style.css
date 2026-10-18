@@ -77,15 +77,12 @@ nav button#logoutButton:hover {
 
 /* 5. Horizontal dividers */
 hr {
-  border: none;
-  border-top: 1px solid #A98F55;
-}
-
-/* Short, centered dividers in the main login area */
-main > hr {
   width: 100%;
   max-width: 900px;
   margin: 25px auto;
+  box-sizing: border-box;
+  border: none;
+  border-top: 1px solid #A98F55;
 }
 
 /* 6. Form fields */
@@ -333,7 +330,7 @@ td:first-child {
   color: #B7A36A;
 }
 
-/* Dividers inside each app */
+/* Dividers inside the apps */
 #appsContainer hr {
   margin-bottom: 20px;
 }
