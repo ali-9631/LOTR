@@ -188,10 +188,28 @@ td:first-child {
   color: #B7A36A;
 }
 
-/* 12. Leap Year App */
-#leapYearApp {
+/* ========================================
+   12. Side-by-side Apps Layout
+   ======================================== */
+
+#appsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  max-width: 900px;
   margin: 25px auto 0;
-  max-width: 420px;
+  align-items: start;
+}
+
+/* ========================================
+   13. Leap Year App
+   ======================================== */
+
+#leapYearApp {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
 }
 
 #leapYearApp h2 {
@@ -245,13 +263,14 @@ td:first-child {
 }
 
 /* ========================================
-   13. Currency Converter App
-   All rules are scoped to this section.
+   14. Currency Converter App
    ======================================== */
 
 #currencyConverter {
-  margin: 25px auto 0;
-  max-width: 420px;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
 }
 
 #currencyConverter h2 {
@@ -305,4 +324,15 @@ td:first-child {
 
 #currencyConverter #currencyMessage.error {
   color: #B7A36A;
+}
+
+/* ========================================
+   15. Responsive Layout
+   ======================================== */
+
+@media (max-width: 650px) {
+  #appsContainer {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
