@@ -180,16 +180,16 @@ td:first-child {
   font-size: 0.7em;
 }
 
-/* 11. Login feedback — scoped to login message */
+/* 11. Login feedback */
 #loginMessage.success {
   color: #8FAF8F;
 }
 
 #loginMessage.error {
-  color: #D98B7B;
+  color: #B7A36A;
 }
 
-/* 12. Leap Year App — scoped to its own section */
+/* 12. Leap Year App */
 #leapYearApp {
   margin: 25px auto 0;
   max-width: 420px;
@@ -199,25 +199,50 @@ td:first-child {
   color: #C9A227;
 }
 
+/* Leap Year input field */
 #leapYearApp #yearInput {
   box-sizing: border-box;
+  width: 200px;
+  max-width: 100%;
+  height: 30px;
+  padding: 5px 8px;
   margin-top: 8px;
-  padding: 8px;
-  width: 100%;
-  max-width: 260px;
+  background-color: #000000;
+  color: #C9A227;
+  border: 1px solid #A98F55;
+  border-radius: 2px;
   text-align: center;
-  font-size: 1em;
+  font-family: cursive;
+  font-size: 0.9em;
 }
 
+/* Placeholder text */
+#leapYearApp #yearInput::placeholder {
+  color: #A98F55;
+  opacity: 1;
+}
+
+/* Focused Leap Year field */
+#leapYearApp #yearInput:focus {
+  outline: 1px solid #C9A227;
+  outline-offset: 1px;
+}
+
+/* Leap Year feedback message */
 #leapYearApp #yearMessage {
-  min-height: 1.5em;
+  min-height: 1.4em;
+  margin: 12px 0;
+  font-family: cursive;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
+/* Successful result: muted green */
 #leapYearApp #yearMessage.success {
   color: #8FAF8F;
 }
 
+/* Non-leap year or invalid input: muted gold */
 #leapYearApp #yearMessage.error {
-  color: #D98B7B;
+  color: #B7A36A;
 }
