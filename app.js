@@ -11,18 +11,15 @@ function getSafeDestination() {
   const params = new URLSearchParams(window.location.search);
   const next = params.get("next");
 
-  // Only allow navigation to simple HTML pages on this site.
-  if (
-    next &&
-    /^\.\/[a-zA-Z0-9_-]+\.html(?:[?#].*)?$/.test(next)
-  ) {
+  // Allow only simple HTML pages on this site.
+  if (next && /^\.\/[a-zA-Z0-9_-]+\.html(?:[?#].*)?$/.test(next)) {
     return next;
   }
 
   return "./index.html";
 }
 
-// If already logged in, don't show the login form again.
+// Redirect users who are already logged in.
 if (sessionStorage.getItem("lotrLoggedIn") === "true") {
   window.location.replace(getSafeDestination());
 } else {
