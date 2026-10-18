@@ -353,3 +353,9 @@ td:first-child {
 #quizForm > section {
   margin-bottom: 35px;
 }
+
+/* Wider divider before quiz submission */
+#quizForm hr {
+  width: 900px;
+  max-width: 90%;
+}
