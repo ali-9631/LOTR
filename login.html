@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOTR — Login</title>
+  <link href="style.css" rel="stylesheet">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="./login.html">Login</a>
+  </nav>
+
+  <main>
+    <h1>Enter Middle-earth</h1>
+    <h2>The gates are open to those who know the password.</h2>
+
+    <form id="loginForm">
+      <section>
+        <label for="username">Username:</label><br>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          autocomplete="username"
+          required
+        >
+      </section>
+
+      <section>
+        <label for="password">Password:</label><br>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          autocomplete="current-password"
+          required
+        >
+      </section>
+
+      <button id="loginButton" type="submit">Login</button>
+
+      <p id="loginMessage" role="status" aria-live="polite"></p>
+    </form>
+
+    <hr>
+
+    <p>For testing, use either account:</p>
+    <p>Username: <code>admin</code> / Password: <code>Hack1234</code></p>
+    <p>Username: <code>user</code> / Password: <code>7654321</code></p>
+  </main>
+</body>
+</html>
