@@ -1,181 +1,33 @@
 
-/* ========================================
-   LORD OF THE RINGS — WEBSITE STYLES
-   ======================================== */
+/* 11. Login and Leap Year feedback */
+.success {
+  color: #8FAF8F;
+}
 
-/* 1. Main page */
-body {
-  background: #0D0B08;
-  color: #D4C19C;
-  padding: 25px;
-  font-family: cursive;
+.error {
+  color: #D98B7B;
+}
+
+/* 12. Leap Year App */
+#leapYearApp {
+  margin: 25px auto 0;
+  max-width: 420px;
+}
+
+#leapYearApp h2 {
+  color: #C9A227;
+}
+
+#yearInput {
+  margin-top: 8px;
+  padding: 8px;
+  width: 100%;
+  max-width: 260px;
   text-align: center;
-}
-
-/* 2. Headings */
-h1 {
-  font-family: "La Guapita", cursive;
-  color: #C9A227;
-}
-
-h2 {
-  color: #B89B5E;
-}
-
-h4 {
-  color: #A98F55;
-}
-
-/* 3. Links */
-a {
-  font-family: "La Guapita", cursive;
-  color: #8FAF8F;
-}
-
-a:visited {
-  color: #8FAF8F;
-}
-
-a:hover {
-  color: #C9A227;
-}
-
-#lotrInk,
-#lotrInk:visited {
-  color: #B7A36A;
-}
-
-#lotrInk:hover {
-  color: #C9A227;
-}
-
-/* 4. Navigation */
-nav a {
-  margin: 0 10px;
-}
-
-nav button#logoutButton {
-  background: none;
-  border: none;
-  color: #8FAF8F;
-  font-family: "La Guapita", cursive;
   font-size: 1em;
-  padding: 0;
-  margin: 0 10px;
-  cursor: pointer;
-  text-decoration: underline;
-  text-decoration-color: #8FAF8F;
 }
 
-nav button#logoutButton:hover {
-  background: none;
-  color: #C9A227;
-  border: none;
-  text-decoration: underline;
-  text-decoration-color: #C9A227;
-}
-
-/* 5. Horizontal divider */
-hr {
-  border: none;
-  border-top: 1px solid #A98F55;
-}
-
-/* 6. Form fields */
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="email"],
-input[type="search"],
-input[type="date"],
-input[type="time"],
-input[type="url"],
-input[list],
-select,
-textarea {
-  background-color: #000000;
-  color: #C9A227;
-  border: 1px solid #A98F55;
-  border-radius: 2px;
-  box-sizing: border-box;
-}
-
-/* Login fields */
-#username,
-#password {
-  background-color: #000000;
-  color: #C9A227;
-  border: 1px solid #A98F55;
-}
-
-/* Focused fields */
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 1px solid #C9A227;
-  outline-offset: 1px;
-}
-
-/* Dropdown options */
-option {
-  background-color: #000000;
-  color: #C9A227;
-}
-
-option:checked {
-  color: #C9A227;
-}
-
-/* Datalist */
-datalist {
-  background-color: #000000;
-  color: #C9A227;
-}
-
-/* 7. Quiz controls */
-input[type="radio"],
-input[type="checkbox"],
-input[type="range"] {
-  accent-color: #C9A227;
-}
-
-/* 8. Buttons */
-button,
-input[type="submit"],
-input[type="login"] {
-  background-color: #C9A227;
-  color: #000000;
-  border: 1px solid #A98F55;
-  border-radius: 2px;
-  cursor: pointer;
-  font-family: "La Guapita", cursive;
-  font-size: 0.85em;
-  padding: 2px 6px;
-}
-
-button:hover,
-input[type="submit"]:hover,
-input[type="login"]:hover {
-  background-color: #0D0B08;
-  color: #D4C19C;
-  border-color: #C9A227;
-}
-
-/* 9. Tables */
-table {
-  margin: auto;
-  text-align: center;
-}
-
-td:first-child {
-  padding-right: 20px;
-}
-
-/* 10. Utility classes */
-.font {
-  font-family: "La Guapita", cursive;
-}
-
-.caption {
-  font-size: 0.7em;
+#yearMessage {
+  min-height: 1.5em;
+  font-weight: bold;
 }
