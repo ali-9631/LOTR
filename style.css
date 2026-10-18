@@ -345,3 +345,31 @@ td:first-child {
     gap: 10px;
   }
 }
+
+/* ========================================
+   16. Precious Quiz — Question Spacing
+   ======================================== */
+
+/* Add space between quiz questions */
+#quizForm > section {
+  margin-bottom: 28px;
+}
+
+/* Space out checkbox and radio options */
+#quizForm input[type="checkbox"],
+#quizForm input[type="radio"] {
+  margin-right: 6px;
+  margin-left: 8px;
+}
+
+/* Keep the Fellowship image responsive */
+#quizForm img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Separate the submission area */
+#quizForm .submission {
+  margin-top: 30px;
+  text-align: center;
+}
