@@ -64,13 +64,14 @@ nav button#logoutButton {
   margin: 0 10px;
   cursor: pointer;
   text-decoration: underline;
-  text-decoration-color: transparent;
+  text-decoration-color: #8FAF8F;
 }
 
 nav button#logoutButton:hover {
   background: none;
   color: #C9A227;
   border: none;
+  text-decoration: underline;
   text-decoration-color: #C9A227;
 }
 
