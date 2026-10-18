@@ -66,6 +66,39 @@
 
       <p id="yearMessage" role="status" aria-live="polite"></p>
     </section>
+
+    <!-- Currency Converter App -->
+    <section id="currencyConverter">
+      <hr>
+
+      <h2>Currency Converter</h2>
+      <p>Convert between euros and US dollars.</p>
+
+      <section>
+        <label for="conversionDirection">Conversion:</label><br>
+        <select id="conversionDirection" name="conversionDirection">
+          <option value="eur-usd">EUR → USD</option>
+          <option value="usd-eur">USD → EUR</option>
+        </select>
+      </section>
+
+      <section>
+        <label for="currencyAmount">Amount:</label><br>
+        <input
+          id="currencyAmount"
+          name="currencyAmount"
+          type="text"
+          inputmode="decimal"
+          autocomplete="off"
+          placeholder="e.g. 10.50"
+          aria-describedby="currencyMessage"
+        >
+      </section>
+
+      <button id="convertButton" type="button">Convert</button>
+
+      <p id="currencyMessage" role="status" aria-live="polite"></p>
+    </section>
   </main>
 </body>
 </html>
