@@ -1,1 +1,1 @@
-[LOTR Website](https://ali-9631.github.io/LOTR-2-with-AI/)
+[LOTR Website](https://ali-9631.github.io/LOTR/)
