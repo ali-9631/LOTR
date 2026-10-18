@@ -8,7 +8,7 @@ import { onLogin } from "./login.js";
 const yearInput = document.getElementById("yearInput");
 const yearMessage = document.getElementById("yearMessage");
 
-yearInput.addEventListener("input", () => {
+function checkLeapYear() {
   const input = yearInput.value.trim();
 
   // Clear the message when the input is empty.
@@ -18,7 +18,7 @@ yearInput.addEventListener("input", () => {
     return;
   }
 
-  // Accept only whole numbers from 1 to 9999.
+  // Accept only whole numbers.
   if (!/^\d+$/.test(input)) {
     yearMessage.textContent =
       "Invalid year! Enter a whole number from 1 to 9999.";
@@ -28,6 +28,7 @@ yearInput.addEventListener("input", () => {
 
   const year = Number(input);
 
+  // Validate the year range.
   if (year < 1 || year > 9999) {
     yearMessage.textContent =
       "Invalid year! Enter a whole number from 1 to 9999.";
@@ -35,8 +36,7 @@ yearInput.addEventListener("input", () => {
     return;
   }
 
-  // A leap year is divisible by 4,
-  // except century years must be divisible by 400.
+  // Check the leap year rules.
   if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
     yearMessage.textContent = `Yes, ${year} is a leap year.`;
     yearMessage.className = "success";
@@ -44,7 +44,20 @@ yearInput.addEventListener("input", () => {
     yearMessage.textContent = `No, ${year} is not a leap year.`;
     yearMessage.className = "error";
   }
-});
+}
+
+// Check immediately while typing.
+if (yearInput && yearMessage) {
+  yearInput.addEventListener("input", checkLeapYear);
+
+  // Also check when Enter is pressed.
+  yearInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      checkLeapYear();
+    }
+  });
+}
 
 // ========================================
 // LOGIN APP
