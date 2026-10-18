@@ -84,7 +84,7 @@ datalist {
     background-color: #000000;
 }
 
-input[type="login"] {
+input[type="submit"] {
     background-color: #C9A227;
     color: #000000;
     cursor: pointer;
