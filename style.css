@@ -3,10 +3,7 @@
    LORD OF THE RINGS — WEBSITE STYLES
    ======================================== */
 
-
-/* 1. Main page
-   ======================================== */
-
+/* 1. Main page */
 body {
   background: #0D0B08;
   color: #D4C19C;
@@ -15,10 +12,7 @@ body {
   text-align: center;
 }
 
-
-/* 2. Headings
-   ======================================== */
-
+/* 2. Headings */
 h1 {
   font-family: "La Guapita", cursive;
   color: #C9A227;
@@ -32,10 +26,7 @@ h4 {
   color: #A98F55;
 }
 
-
-/* 3. Links
-   ======================================== */
-
+/* 3. Links */
 a {
   font-family: "La Guapita", cursive;
   color: #8FAF8F;
@@ -49,11 +40,7 @@ a:hover {
   color: #C9A227;
 }
 
-/* Special LOTR link */
-#lotrInk {
-  color: #B7A36A;
-}
-
+#lotrInk,
 #lotrInk:visited {
   color: #B7A36A;
 }
@@ -62,15 +49,11 @@ a:hover {
   color: #C9A227;
 }
 
-
-/* 4. Navigation
-   ======================================== */
-
+/* 4. Navigation */
 nav a {
   margin: 0 10px;
 }
 
-/* Log Out — styled like Home and Contact */
 nav button#logoutButton {
   background: none;
   border: none;
@@ -88,24 +71,16 @@ nav button#logoutButton:hover {
   background: none;
   color: #C9A227;
   border: none;
-  text-decoration: underline;
   text-decoration-color: #C9A227;
 }
 
-
-/* 5. Horizontal divider
-   ======================================== */
-
+/* 5. Horizontal divider */
 hr {
   border: none;
   border-top: 1px solid #A98F55;
 }
 
-
-/* 6. Form fields
-   ======================================== */
-
-/* Text, password, number, and other entry fields */
+/* 6. Form fields */
 input[type="text"],
 input[type="password"],
 input[type="number"],
@@ -114,8 +89,6 @@ input[type="search"],
 input[type="date"],
 input[type="time"],
 input[type="url"],
-input[name="username"],
-input[name="pw"],
 input[list],
 select,
 textarea {
@@ -126,9 +99,9 @@ textarea {
   box-sizing: border-box;
 }
 
-/* Login username and password fields */
-input#username,
-input#pw {
+/* Login fields */
+#username,
+#password {
   background-color: #000000;
   color: #C9A227;
   border: 1px solid #A98F55;
@@ -140,13 +113,6 @@ select:focus,
 textarea:focus {
   outline: 1px solid #C9A227;
   outline-offset: 1px;
-}
-
-/* Keep login fields black when focused */
-input#username:focus,
-input#pw:focus {
-  background-color: #000000;
-  color: #C9A227;
 }
 
 /* Dropdown options */
@@ -165,26 +131,14 @@ datalist {
   color: #C9A227;
 }
 
-
-/* 7. Quiz controls
-   ======================================== */
-
-/* Radio buttons and checkboxes */
+/* 7. Quiz controls */
 input[type="radio"],
-input[type="checkbox"] {
-  accent-color: #C9A227;
-}
-
-/* Range sliders */
+input[type="checkbox"],
 input[type="range"] {
   accent-color: #C9A227;
 }
 
-
-/* 8. Buttons
-   ======================================== */
-
-/* Log In, Submit, and other buttons */
+/* 8. Buttons */
 button,
 input[type="submit"],
 input[type="login"] {
@@ -198,7 +152,6 @@ input[type="login"] {
   padding: 2px 6px;
 }
 
-/* Button hover effect */
 button:hover,
 input[type="submit"]:hover,
 input[type="login"]:hover {
@@ -207,10 +160,7 @@ input[type="login"]:hover {
   border-color: #C9A227;
 }
 
-
-/* 9. Tables
-   ======================================== */
-
+/* 9. Tables */
 table {
   margin: auto;
   text-align: center;
@@ -220,16 +170,11 @@ td:first-child {
   padding-right: 20px;
 }
 
-
-/* 10. Utility classes
-   ======================================== */
-
-/* Decorative font */
+/* 10. Utility classes */
 .font {
   font-family: "La Guapita", cursive;
 }
 
-/* Small captions */
 .caption {
   font-size: 0.7em;
 }
