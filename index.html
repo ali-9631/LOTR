@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOTR — How cool are you?</title>
+  <link href="style.css" rel="stylesheet">
+  <script type="module" src="site.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./test.html">Precious Quiz</a>
+      <a href="#contact">Contact</a>
+      <button id="logoutButton" type="button">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>How cool are you?</h1>
+    <h2>Welcome, little hobbitses!</h2>
+
+    <p>
+      Are you a true
+      <em>
+        <a
+          href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)"
+          id="lotrInk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Lord of the Rings</a>
+      </em>
+      fan? Click on the <strong>Precious</strong> and discover how cool
+      you truly are.
+    </p>
+
+    <a href="./test.html" aria-label="Take the LOTR quiz">
+      <img
+        src="https://cdna.artstation.com/p/assets/images/images/027/060/474/original/petar-gnip-gollum.gif?1590487488"
+        alt="Gollum holding the Precious"
+        width="200"
+        height="200"
+      >
+    </a>
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3">Here's some history for you:</th>
+        </tr>
+        <tr>
+          <th scope="col"><h4>Sword</h4></th>
+          <th scope="col"><h4>Wielder</h4></th>
+          <th scope="col"><h4>Notes</h4></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p class="font">Sting</p></td>
+          <td>Bilbo</td>
+          <td>Glows blue when Orcs are near</td>
+        </tr>
+        <tr>
+          <td><p class="font">Andúril</p></td>
+          <td>Aragorn</td>
+          <td>Reforged from the shards of Narsil</td>
+        </tr>
+        <tr>
+          <td><p class="font">Narsil</p></td>
+          <td>Elendil</td>
+          <td>Broke at the War of the Last Alliance</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section>
+      <p><strong>Enjoy this beautiful sound:</strong></p>
+      <iframe
+        width="280"
+        height="157"
+        src="https://www.youtube.com/embed/Dw6BCAZqkaQ?si=nXcxlD-wn_lI9hGy"
+        title="The Lord of the Rings music video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section id="contact">
+      <hr>
+      <p>
+        <strong>Email:</strong> howcoolareyou@mordor.com |
+        <strong>Address:</strong> Barad-dûr, Plateau of Gorgoroth, Mordor
+      </p>
+    </section>
+  </main>
+</body>
+</html>
