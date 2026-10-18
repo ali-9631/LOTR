@@ -16,8 +16,7 @@ export function onLogin(username, password) {
   }
 
   const validCredentials =
-    (username === "admin" && password === "Hack1234") ||
-    (username === "user" && password === "7654321");
+    (username === "friend" && password === "Mellon");
 
   if (validCredentials) {
     sessionStorage.setItem("lotrLoggedIn", "true");
