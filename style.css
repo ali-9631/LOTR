@@ -359,3 +359,70 @@ td:first-child {
   width: 900px;
   max-width: 90%;
 }
+
+
+/* Sword table and music video side by side */
+.content-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.swords-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.swords-section table {
+  width: 100%;
+}
+
+.music-section {
+  flex: 0 0 280px;
+  margin: 0;
+}
+
+.music-section p {
+  margin-top: 0;
+}
+
+.music-section iframe {
+  display: block;
+  max-width: 100%;
+  border: 0;
+}
+
+/* Contact section underneath both columns */
+#contact {
+  width: 100%;
+}
+
+#contact hr {
+  width: 100%;
+}
+
+/* Stack the sections on smaller screens */
+@media (max-width: 700px) {
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .swords-section {
+    width: 100%;
+  }
+
+  .music-section {
+    flex: none;
+    width: 100%;
+  }
+
+  .music-section iframe {
+    width: 100%;
+    max-width: 280px;
+  }
+}
