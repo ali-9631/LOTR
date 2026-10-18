@@ -75,10 +75,17 @@ nav button#logoutButton:hover {
   text-decoration-color: #C9A227;
 }
 
-/* 5. Horizontal divider */
+/* 5. Horizontal dividers */
 hr {
   border: none;
   border-top: 1px solid #A98F55;
+}
+
+/* Short, centered dividers in the main login area */
+main > hr {
+  width: 100%;
+  max-width: 900px;
+  margin: 25px auto;
 }
 
 /* 6. Form fields */
@@ -324,6 +331,11 @@ td:first-child {
 
 #currencyConverter #currencyMessage.error {
   color: #B7A36A;
+}
+
+/* Dividers inside each app */
+#appsContainer hr {
+  margin-bottom: 20px;
 }
 
 /* ========================================
