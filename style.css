@@ -69,24 +69,38 @@ option:checked {
   color: #C9A227;
 }
 
+/* Black form fields with gold text */
 input[type="text"],
 input[name="username"],
 input[name="pw"],
+input[type="password"],
+input[type="number"],
+input[list],
 select,
 option,
-input[type="number"],
 textarea,
-input[list] {
-  color: #C9A227;
-  background-color: #000000;
-}
-
 datalist {
   color: #C9A227;
   background-color: #000000;
 }
 
-/* Log In and Submit buttons — original gold design */
+/* Username and password field borders */
+input#username,
+input#pw {
+  background-color: #000000;
+  color: #C9A227;
+  border: 1px solid #A98F55;
+}
+
+/* Keep login fields black when focused */
+input#username:focus,
+input#pw:focus {
+  background-color: #000000;
+  color: #C9A227;
+  outline: 1px solid #C9A227;
+}
+
+/* Small, original-style Log In and Submit buttons */
 button,
 input[type="submit"],
 input[type="login"] {
@@ -95,10 +109,11 @@ input[type="login"] {
   border: 1px solid #A98F55;
   cursor: pointer;
   font-family: "La Guapita", cursive;
-  font-size: 1em;
-  padding: 4px 10px;
+  font-size: 0.85em;
+  padding: 2px 6px;
 }
 
+/* Button hover effect */
 button:hover,
 input[type="submit"]:hover,
 input[type="login"]:hover {
@@ -107,7 +122,7 @@ input[type="login"]:hover {
   border-color: #C9A227;
 }
 
-/* Navigation */
+/* Navigation links */
 nav a {
   margin: 0 10px;
 }
@@ -122,12 +137,17 @@ nav button#logoutButton {
   padding: 0;
   margin: 0 10px;
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: transparent;
 }
 
+/* Log Out hover — gold text and underline */
 nav button#logoutButton:hover {
   background: none;
   color: #C9A227;
   border: none;
+  text-decoration: underline;
+  text-decoration-color: #C9A227;
 }
 
 /* Tables */
