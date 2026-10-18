@@ -60,6 +60,86 @@ if (yearInput && yearMessage) {
 }
 
 // ========================================
+// CURRENCY CONVERTER APP
+// ========================================
+
+// Exchange rate: 1 EUR = 1.1643 USD.
+const EUR_USD_RATE = 1.1643;
+
+const conversionDirection =
+  document.getElementById("conversionDirection");
+const currencyAmount = document.getElementById("currencyAmount");
+const convertButton = document.getElementById("convertButton");
+const currencyMessage = document.getElementById("currencyMessage");
+
+function convertCurrency() {
+  const amountInput = currencyAmount.value.trim();
+  const direction = conversionDirection.value;
+
+  // Check for an empty input.
+  if (amountInput === "") {
+    currencyMessage.textContent = "Please enter an amount.";
+    currencyMessage.className = "error";
+    return;
+  }
+
+  const amount = Number(amountInput);
+
+  // Validate the amount.
+  if (!Number.isFinite(amount) || amount <= 0) {
+    currencyMessage.textContent =
+      "Please enter a valid positive number.";
+    currencyMessage.className = "error";
+    return;
+  }
+
+  // Convert the amount in the selected direction.
+  if (direction === "eur-usd") {
+    const convertedAmount = amount * EUR_USD_RATE;
+
+    currencyMessage.textContent =
+      `${amount.toFixed(2)} EUR = ${convertedAmount.toFixed(2)} USD.`;
+  } else {
+    const convertedAmount = amount / EUR_USD_RATE;
+
+    currencyMessage.textContent =
+      `${amount.toFixed(2)} USD = ${convertedAmount.toFixed(2)} EUR.`;
+  }
+
+  currencyMessage.className = "success";
+}
+
+// Convert when the button is clicked.
+if (
+  conversionDirection &&
+  currencyAmount &&
+  convertButton &&
+  currencyMessage
+) {
+  convertButton.addEventListener("click", convertCurrency);
+
+  // Also convert when Enter is pressed.
+  currencyAmount.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      convertCurrency();
+    }
+  });
+
+  // Clear old feedback when the user changes the direction.
+  conversionDirection.addEventListener("change", () => {
+    currencyMessage.textContent = "";
+    currencyMessage.className = "";
+  });
+
+  // Clear old feedback when the user edits the amount.
+  currencyAmount.addEventListener("input", () => {
+    currencyMessage.textContent = "";
+    currencyMessage.className = "";
+  });
+}
+
+// ========================================
 // LOGIN APP
 // ========================================
 
