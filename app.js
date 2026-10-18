@@ -11,7 +11,6 @@ const yearMessage = document.getElementById("yearMessage");
 function checkLeapYear() {
   const input = yearInput.value.trim();
 
-  // Clear the message when the input is empty.
   if (input === "") {
     yearMessage.textContent = "";
     yearMessage.className = "";
@@ -55,6 +54,7 @@ if (yearInput && yearMessage) {
     if (event.key === "Enter") {
       event.preventDefault();
       checkLeapYear();
+      yearInput.blur();
     }
   });
 }
