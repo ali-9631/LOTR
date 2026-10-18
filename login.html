@@ -47,58 +47,63 @@
     <p>For testing, please use account:</p>
     <p>Username: <code>friend</code> / Password: <code>Mellon</code></p>
 
-    <!-- Leap Year App -->
-    <section id="leapYearApp">
-      <hr>
+    <!-- Side-by-side Apps Container -->
+    <div id="appsContainer">
 
-      <h2>Leap Year?</h2>
-      <p>Enter a year and discover whether it's a leap year.</p>
+      <!-- Leap Year App -->
+      <section id="leapYearApp">
+        <hr>
 
-      <input
-        id="yearInput"
-        name="year"
-        type="text"
-        inputmode="numeric"
-        autocomplete="off"
-        placeholder="e.g. 2024"
-        aria-describedby="yearMessage"
-      >
+        <h2>Leap Year?</h2>
+        <p>Enter a year and discover whether it's a leap year.</p>
 
-      <p id="yearMessage" role="status" aria-live="polite"></p>
-    </section>
-
-    <!-- Currency Converter App -->
-    <section id="currencyConverter">
-      <hr>
-
-      <h2>Currency Converter</h2>
-      <p>Convert between euros and US dollars.</p>
-
-      <section>
-        <label for="conversionDirection">Conversion:</label><br>
-        <select id="conversionDirection" name="conversionDirection">
-          <option value="eur-usd">EUR → USD</option>
-          <option value="usd-eur">USD → EUR</option>
-        </select>
-      </section>
-
-      <section>
-        <label for="currencyAmount">Amount:</label><br>
         <input
-          id="currencyAmount"
-          name="currencyAmount"
+          id="yearInput"
+          name="year"
           type="text"
-          inputmode="decimal"
+          inputmode="numeric"
           autocomplete="off"
-          placeholder="e.g. 10.50"
-          aria-describedby="currencyMessage"
+          placeholder="e.g. 2024"
+          aria-describedby="yearMessage"
         >
+
+        <p id="yearMessage" role="status" aria-live="polite"></p>
       </section>
 
-      <button id="convertButton" type="button">Convert</button>
+      <!-- Currency Converter App -->
+      <section id="currencyConverter">
+        <hr>
 
-      <p id="currencyMessage" role="status" aria-live="polite"></p>
-    </section>
+        <h2>Currency Converter</h2>
+        <p>Convert between euros and US dollars.</p>
+
+        <section>
+          <label for="conversionDirection">Conversion:</label><br>
+          <select id="conversionDirection" name="conversionDirection">
+            <option value="eur-usd">EUR → USD</option>
+            <option value="usd-eur">USD → EUR</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="currencyAmount">Amount:</label><br>
+          <input
+            id="currencyAmount"
+            name="currencyAmount"
+            type="text"
+            inputmode="decimal"
+            autocomplete="off"
+            placeholder="e.g. 10.50"
+            aria-describedby="currencyMessage"
+          >
+        </section>
+
+        <button id="convertButton" type="button">Convert</button>
+
+        <p id="currencyMessage" role="status" aria-live="polite"></p>
+      </section>
+
+    </div>
   </main>
 </body>
 </html>
