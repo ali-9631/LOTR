@@ -1,5 +1,12 @@
 
-/* Main page */
+/* ========================================
+   LORD OF THE RINGS — WEBSITE STYLES
+   ======================================== */
+
+
+/* 1. Main page
+   ======================================== */
+
 body {
   background: #0D0B08;
   color: #D4C19C;
@@ -8,7 +15,10 @@ body {
   text-align: center;
 }
 
-/* Headings */
+
+/* 2. Headings
+   ======================================== */
+
 h1 {
   font-family: "La Guapita", cursive;
   color: #C9A227;
@@ -22,7 +32,10 @@ h4 {
   color: #A98F55;
 }
 
-/* Links */
+
+/* 3. Links
+   ======================================== */
+
 a {
   font-family: "La Guapita", cursive;
   color: #8FAF8F;
@@ -49,42 +62,71 @@ a:hover {
   color: #C9A227;
 }
 
-/* Horizontal divider */
+
+/* 4. Navigation
+   ======================================== */
+
+nav a {
+  margin: 0 10px;
+}
+
+/* Log Out — styled like Home and Contact */
+nav button#logoutButton {
+  background: none;
+  border: none;
+  color: #8FAF8F;
+  font-family: "La Guapita", cursive;
+  font-size: 1em;
+  padding: 0;
+  margin: 0 10px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+nav button#logoutButton:hover {
+  background: none;
+  color: #C9A227;
+  border: none;
+  text-decoration: underline;
+  text-decoration-color: #C9A227;
+}
+
+
+/* 5. Horizontal divider
+   ======================================== */
+
 hr {
   border: none;
   border-top: 1px solid #A98F55;
 }
 
-/* Form controls */
-input[type="range"] {
-  accent-color: #C9A227;
-}
 
-input[type="radio"],
-input[type="checkbox"] {
-  accent-color: #C9A227;
-}
+/* 6. Form fields
+   ======================================== */
 
-option:checked {
-  color: #C9A227;
-}
-
-/* Black form fields with gold text */
+/* Text, password, number, and other entry fields */
 input[type="text"],
-input[name="username"],
-input[name="pw"],
 input[type="password"],
 input[type="number"],
+input[type="email"],
+input[type="search"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+input[name="username"],
+input[name="pw"],
 input[list],
 select,
-option,
-textarea,
-datalist {
-  color: #C9A227;
+textarea {
   background-color: #000000;
+  color: #C9A227;
+  border: 1px solid #A98F55;
+  border-radius: 2px;
+  box-sizing: border-box;
 }
 
-/* Username and password field borders */
+/* Login username and password fields */
 input#username,
 input#pw {
   background-color: #000000;
@@ -92,21 +134,64 @@ input#pw {
   border: 1px solid #A98F55;
 }
 
+/* Focused fields */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 1px solid #C9A227;
+  outline-offset: 1px;
+}
+
 /* Keep login fields black when focused */
 input#username:focus,
 input#pw:focus {
   background-color: #000000;
   color: #C9A227;
-  outline: 1px solid #C9A227;
 }
 
-/* Small, original-style Log In and Submit buttons */
+/* Dropdown options */
+option {
+  background-color: #000000;
+  color: #C9A227;
+}
+
+option:checked {
+  color: #C9A227;
+}
+
+/* Datalist */
+datalist {
+  background-color: #000000;
+  color: #C9A227;
+}
+
+
+/* 7. Quiz controls
+   ======================================== */
+
+/* Radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #C9A227;
+}
+
+/* Range sliders */
+input[type="range"] {
+  accent-color: #C9A227;
+}
+
+
+/* 8. Buttons
+   ======================================== */
+
+/* Log In, Submit, and other buttons */
 button,
 input[type="submit"],
 input[type="login"] {
   background-color: #C9A227;
   color: #000000;
   border: 1px solid #A98F55;
+  border-radius: 2px;
   cursor: pointer;
   font-family: "La Guapita", cursive;
   font-size: 0.85em;
@@ -122,35 +207,10 @@ input[type="login"]:hover {
   border-color: #C9A227;
 }
 
-/* Navigation links */
-nav a {
-  margin: 0 10px;
-}
 
-/* Log Out — match Home and Contact */
-nav button#logoutButton {
-  background: none;
-  border: none;
-  color: #8FAF8F;
-  font-family: "La Guapita", cursive;
-  font-size: 1em;
-  padding: 0;
-  margin: 0 10px;
-  cursor: pointer;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-}
+/* 9. Tables
+   ======================================== */
 
-/* Log Out hover — gold text and underline */
-nav button#logoutButton:hover {
-  background: none;
-  color: #C9A227;
-  border: none;
-  text-decoration: underline;
-  text-decoration-color: #C9A227;
-}
-
-/* Tables */
 table {
   margin: auto;
   text-align: center;
@@ -160,11 +220,16 @@ td:first-child {
   padding-right: 20px;
 }
 
-/* Utility classes */
+
+/* 10. Utility classes
+   ======================================== */
+
+/* Decorative font */
 .font {
   font-family: "La Guapita", cursive;
 }
 
+/* Small captions */
 .caption {
   font-size: 0.7em;
 }
