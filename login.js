@@ -2,7 +2,7 @@
 const MAX_ATTEMPTS = 4;
 const ATTEMPTS_KEY = "lotrIncorrectAttempts";
 
-// Do not change the credentials import/export structure required by your homework.
+// Check credentials and manage login attempts.
 export function onLogin(username, password) {
   const attempts = Number(
     sessionStorage.getItem(ATTEMPTS_KEY) || "0"
@@ -16,7 +16,7 @@ export function onLogin(username, password) {
   }
 
   const validCredentials =
-    (username === "friend" && password === "Mellon");
+    username === "friend" && password === "Mellon";
 
   if (validCredentials) {
     sessionStorage.setItem("lotrLoggedIn", "true");
@@ -30,7 +30,6 @@ export function onLogin(username, password) {
   }
 
   const nextAttempts = attempts + 1;
-
   sessionStorage.setItem(ATTEMPTS_KEY, String(nextAttempts));
 
   if (nextAttempts >= MAX_ATTEMPTS) {
