@@ -1,4 +1,4 @@
-
+```css
 /* ========================================
    LORD OF THE RINGS — WEBSITE STYLES
    ======================================== */
@@ -8,13 +8,13 @@ body {
   background: #0D0B08;
   color: #D4C19C;
   padding: 25px;
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
 /* 2. Headings */
 h1 {
-  font-family: "La Guapita", cursive;
+  font-family: Georgia, "Times New Roman", serif;
   color: #C9A227;
 }
 
@@ -28,7 +28,7 @@ h4 {
 
 /* 3. Links */
 a {
-  font-family: "La Guapita", cursive;
+  font-family: Georgia, "Times New Roman", serif;
   color: #8FAF8F;
 }
 
@@ -58,7 +58,7 @@ nav button#logoutButton {
   background: none;
   border: none;
   color: #8FAF8F;
-  font-family: "La Guapita", cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   padding: 0;
   margin: 0 10px;
@@ -101,6 +101,7 @@ textarea {
   color: #C9A227;
   border: 1px solid #A98F55;
   border-radius: 2px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Login fields */
@@ -151,7 +152,7 @@ input[type="login"] {
   border: 1px solid #A98F55;
   border-radius: 2px;
   cursor: pointer;
-  font-family: "La Guapita", cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.85em;
   padding: 2px 6px;
 }
@@ -176,7 +177,7 @@ td:first-child {
 
 /* 10. Utility classes */
 .font {
-  font-family: "La Guapita", cursive;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 .caption {
@@ -233,7 +234,7 @@ td:first-child {
   border: 1px solid #A98F55;
   border-radius: 2px;
   text-align: center;
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
 }
 
@@ -253,7 +254,7 @@ td:first-child {
 #leapYearApp #yearMessage {
   min-height: 1.4em;
   margin: 12px 0;
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
 }
@@ -294,7 +295,7 @@ td:first-child {
   border: 1px solid #A98F55;
   border-radius: 2px;
   text-align: center;
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
 }
 
@@ -316,7 +317,7 @@ td:first-child {
 #currencyConverter #currencyMessage {
   min-height: 1.4em;
   margin: 12px 0;
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
   overflow-wrap: anywhere;
@@ -359,3 +360,4 @@ td:first-child {
   width: 900px;
   max-width: 90%;
 }
+```
