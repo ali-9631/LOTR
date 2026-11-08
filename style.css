@@ -550,3 +550,16 @@ td:first-child {
     line-height: 2.2;
   }
 }
+/* Responsive YouTube video */
+.youtube-container {
+  width: 100%;
+  max-width: 560px;
+  margin: 20px auto;
+}
+
+.youtube-container iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
