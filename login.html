@@ -5,9 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LOTR — Login</title>
+
   <link href="style.css" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
+
   <script type="module" src="app.js"></script>
+  <script type="module" src="explorer.js"></script>
 </head>
+
 <body>
   <main>
     <h1>Welcome to Middle-earth</h1>
@@ -47,7 +58,6 @@
     <p>For testing, please use account:</p>
     <p>Username: <code>friend</code> / Password: <code>Mellon</code></p>
 
-    <!-- Side-by-side Apps Container -->
     <div id="appsContainer">
 
       <!-- Leap Year App -->
@@ -101,6 +111,75 @@
         <button id="convertButton" type="button">Convert</button>
 
         <p id="currencyMessage" role="status" aria-live="polite"></p>
+      </section>
+
+      <!-- Weather -->
+      <section id="weatherApp">
+        <hr>
+
+        <form id="weatherForm" class="search-row">
+          <label for="weatherCity" class="visually-hidden">
+            Search weather by city
+          </label>
+
+          <input
+            id="weatherCity"
+            type="text"
+            placeholder="Search weather by city..."
+            value="Amsterdam"
+            autocomplete="off"
+          >
+
+          <button type="submit">Search</button>
+        </form>
+
+        <p id="weatherMessage" role="status" aria-live="polite"></p>
+
+        <div id="weatherCard" class="weather-card" hidden>
+          <p id="weatherPlace"></p>
+
+          <div class="weather-main">
+            <span id="weatherIcon" aria-hidden="true"></span>
+            <strong id="weatherTemperature"></strong>
+            <span id="weatherDescription"></span>
+          </div>
+
+          <div class="weather-details">
+            <p>Feels like: <strong id="weatherFeelsLike"></strong></p>
+            <p>Humidity: <strong id="weatherHumidity"></strong></p>
+            <p>Wind: <strong id="weatherWind"></strong></p>
+          </div>
+
+          <div id="hourlyForecast" class="hourly-forecast"></div>
+        </div>
+      </section>
+
+      <!-- Real-world map -->
+      <section id="worldMapApp">
+        <hr>
+
+        <form id="mapSearchForm" class="search-row">
+          <label for="mapCity" class="visually-hidden">
+            Find a city on the map
+          </label>
+
+          <input
+            id="mapCity"
+            type="text"
+            placeholder="Find a city on the world map..."
+            autocomplete="off"
+          >
+
+          <button type="submit">Explore</button>
+        </form>
+
+        <p id="mapMessage" role="status" aria-live="polite"></p>
+
+        <div
+          id="worldMap"
+          role="application"
+          aria-label="Interactive world map"
+        ></div>
       </section>
 
     </div>
