@@ -1,3 +1,4 @@
+
 /* ========================================
    LORD OF THE RINGS — WEBSITE STYLES
    ======================================== */
@@ -102,7 +103,6 @@ textarea {
   border-radius: 2px;
 }
 
-/* Login fields */
 #username,
 #password {
   background-color: #000000;
@@ -110,7 +110,6 @@ textarea {
   border: 1px solid #A98F55;
 }
 
-/* Focused fields */
 input:focus,
 select:focus,
 textarea:focus {
@@ -118,7 +117,6 @@ textarea:focus {
   outline-offset: 1px;
 }
 
-/* Dropdown options */
 option {
   background-color: #000000;
   color: #C9A227;
@@ -128,7 +126,6 @@ option:checked {
   color: #C9A227;
 }
 
-/* Datalist */
 datalist {
   background-color: #000000;
   color: #C9A227;
@@ -191,10 +188,7 @@ td:first-child {
   color: #B7A36A;
 }
 
-/* ========================================
-   12. Side-by-side Apps Layout
-   ======================================== */
-
+/* 12. Side-by-side Apps Layout */
 #appsContainer {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -204,10 +198,7 @@ td:first-child {
   align-items: start;
 }
 
-/* ========================================
-   13. Leap Year App
-   ======================================== */
-
+/* 13. Leap Year App */
 #leapYearApp {
   width: 100%;
   max-width: none;
@@ -219,7 +210,6 @@ td:first-child {
   color: #C9A227;
 }
 
-/* Leap Year input field */
 #leapYearApp #yearInput {
   box-sizing: border-box;
   width: 200px;
@@ -236,19 +226,16 @@ td:first-child {
   font-size: 0.9em;
 }
 
-/* Placeholder text */
 #leapYearApp #yearInput::placeholder {
   color: #A98F55;
   opacity: 1;
 }
 
-/* Focused Leap Year field */
 #leapYearApp #yearInput:focus {
   outline: 1px solid #C9A227;
   outline-offset: 1px;
 }
 
-/* Leap Year feedback message */
 #leapYearApp #yearMessage {
   min-height: 1.4em;
   margin: 12px 0;
@@ -265,10 +252,7 @@ td:first-child {
   color: #B7A36A;
 }
 
-/* ========================================
-   14. Currency Converter App
-   ======================================== */
-
+/* 14. Currency Converter App */
 #currencyConverter {
   width: 100%;
   max-width: none;
@@ -329,15 +313,11 @@ td:first-child {
   color: #B7A36A;
 }
 
-/* Dividers inside the apps */
 #appsContainer hr {
   margin-bottom: 20px;
 }
 
-/* ========================================
-   15. Responsive Layout
-   ======================================== */
-
+/* 15. Responsive Layout */
 @media (max-width: 650px) {
   #appsContainer {
     grid-template-columns: 1fr;
@@ -345,16 +325,225 @@ td:first-child {
   }
 }
 
-/* ========================================
-   16. Precious Quiz — Question Spacing
-   ======================================== */
-
+/* 16. Precious Quiz — Question Spacing */
 #quizForm > section {
   margin-bottom: 15px;
 }
 
-/* Wider divider before quiz submission */
 #quizForm hr {
   width: 900px;
   max-width: 90%;
+}
+
+/* ========================================
+   17. WEATHER + MAP EXPLORER
+   ======================================== */
+
+.feature-section {
+  max-width: 1050px;
+  margin: 35px auto;
+}
+
+.feature-section > p {
+  line-height: 1.6;
+}
+
+.search-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px auto;
+}
+
+.search-row input {
+  box-sizing: border-box;
+  width: min(330px, 100%);
+  min-height: 36px;
+  padding: 7px 10px;
+  text-align: left;
+  font: inherit;
+}
+
+.search-row button {
+  min-height: 36px;
+  padding: 6px 12px;
+}
+
+.status-message {
+  min-height: 1.4em;
+  margin: 12px auto;
+  font-size: .9em;
+}
+
+.status-message.error {
+  color: #d28d78;
+}
+
+.status-message.success {
+  color: #8FAF8F;
+}
+
+/* Weather card */
+.weather-card {
+  box-sizing: border-box;
+  max-width: 680px;
+  margin: 22px auto;
+  padding: 22px;
+  border: 1px solid #806b43;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #1b1710, #100e0a);
+  box-shadow: 0 8px 24px #00000055;
+}
+
+.weather-main {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 18px;
+  text-align: left;
+}
+
+.weather-place {
+  margin: 0 0 5px;
+  color: #C9A227;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.weather-description {
+  margin: 0;
+  color: #D4C19C;
+}
+
+.weather-icon {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.weather-temperature {
+  margin: 0;
+  color: #C9A227;
+  font-size: 2.4em;
+  white-space: nowrap;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 12px 0;
+  border-top: 1px solid #55472e;
+  border-bottom: 1px solid #55472e;
+}
+
+.weather-details p {
+  margin: 0;
+}
+
+.weather-details strong {
+  color: #C9A227;
+}
+
+.weather-card h3 {
+  color: #B89B5E;
+  margin-bottom: 12px;
+}
+
+.hourly-forecast {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.hour-item {
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+  padding: 10px 4px;
+  border: 1px solid #55472e;
+  border-radius: 5px;
+}
+
+.hour-item span:nth-child(2) {
+  font-size: 1.35em;
+}
+
+.hour-item strong {
+  color: #C9A227;
+}
+
+.data-credit {
+  color: #9d8c6b;
+  font-size: .75em;
+  margin-top: 15px;
+}
+
+/* Real-world map */
+#worldMap {
+  width: 100%;
+  height: 440px;
+  margin: 20px auto 0;
+  border: 1px solid #806b43;
+  border-radius: 8px;
+  z-index: 1;
+  background: #17140e;
+}
+
+.leaflet-container {
+  font-family: Arial, sans-serif;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #1b1710;
+  color: #D4C19C;
+}
+
+.leaflet-popup-content a {
+  color: #C9A227;
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 18. Responsive explorer layout */
+@media (max-width: 700px) {
+  .weather-main {
+    grid-template-columns: 1fr auto;
+  }
+
+  .weather-temperature {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .weather-details {
+    justify-content: center;
+  }
+
+  .hourly-forecast {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #worldMap {
+    height: 340px;
+  }
+
+  nav {
+    line-height: 2.2;
+  }
 }
