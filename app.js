@@ -194,4 +194,17 @@ if (sessionStorage.getItem("lotrLoggedIn") === "true") {
       }
     }, randomDelay);
   });
+
+//date and time
+function showDateTime() {
+  const now = new Date();
+
+  document.getElementById("date-time").textContent =
+    now;
+}
+
+showDateTime();
+
+setInterval(showDateTime, 1000);
+
 }
